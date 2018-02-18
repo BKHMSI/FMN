@@ -1,0 +1,97 @@
+html{
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400
+}
+
+.main-header{
+    height: 69px;
+    min-height: 69px;
+    min-width: 1000px;
+    border-bottom: 5px solid #343436;
+    box-shadow: 0 1px 1px black;
+    background: black;
+    color: white;
+    border-bottom: 1px solid #222;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: middle;
+    -ms-flex-align: middle;
+    align-items: middle;
+    position: relative;
+}
+
+.pen-title-area{
+    padding: 10px 15px 0 15px;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 0;
+    min-width: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.pen-title-text, .pen-title-area{
+    min-width: 0
+}
+
+.pen-title-area, .pen-title{
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 0 0 2px 0
+}
+
+.pen-title{
+    margin-top: 5px;
+    margin-left: 20px
+}
+
+.pen-title-area .by{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: #999;
+    margin-left: 20px
+}
+
+.primary-actions{
+    min-width: 50%;
+    display: -ms-flexbox;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0
+}
+
+button {
+    background-color: #f2580b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 12px 24px;
+    width:150px;
+    height:50px;
+    transition: background-color 0.5s;
+  }
+  
+  button:hover {
+    background-color: #c24609;
+    transition: background-color 0.5s;
+  }

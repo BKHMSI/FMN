@@ -1,0 +1,50 @@
+<!Doctype HTML>
+<html ng-app="FMN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"/></script>
+        <!-- AngularJS -->
+        <script type="text/javascript" charset="utf8" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Stylesheets -->
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <link href="search.css" rel="stylesheet" type="text/css"/>
+        <link href="header.css" rel="stylesheet" type="text/css"/>
+        <!-- Scripts -->
+        <script type="text/javascript" charset="utf8" src="app.js"></script>
+        <script type="text/javascript" charset="utf8" src="youtube.js"></script>
+        <title>FMN</title>
+    </head>
+    <body ng-controller="Controller">
+         <header class='main-header' id='main-header'>
+            <div class='header-chunk pen-title-area'>
+                <a href='#' class='pen-title-home-link'><img width='50px' height='50px' src='fmn.png'/></a>
+                <div class='pen-title-text'>
+                    <h1 id='pen-title' class='pen-title'>{{title}}</h1>
+                    <div class='by'>{{subtitle}}</div>
+                </div>
+            </div>
+            <div class='primary-actions'>
+                <button type="button" class="btn btn-success navbar-btn" ng-click="search()" ><span class="glyphicon glyphicon-search"></span> Search </button>
+                <button type="button" class="btn btn-default navbar-btn" ng-click="settings()" ><span class="glyphicon glyphicon-cog"></span> Settings </button>
+                <button type="button" class="btn btn-default navbar-btn" ng-click="about()" ><i class="fa fa-info-circle"></i> About </button>
+                <button type="button" class="btn btn-danger navbar-btn"  ng-click="bug()"><i class="fa fa-bug" aria-hidden="true"></i> Report a Bug</button>
+            </div>
+        </header>
+        <a href="https://gitlab.com/HMBK/fmn"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+        <div class="container" style="padding-top:10px;">
+            <div class="alert alert-danger" ng-hide="error === ''">{{error}}</div>
+            <div class="container-1">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" ng-model="query" id="search" placeholder="Search..." />
+            </div>
+            <div id="player" style="text-align:center; width:100%; padding-top: 20px"></div>
+            <hr style="margin-top:10px;margin-bottom:10px;"/>
+            <p><small> &copy; Badr AlKhamissi</small></p>
+        </div>
+  </body>
+</html>
